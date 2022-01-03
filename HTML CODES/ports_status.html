@@ -1,0 +1,53 @@
+{% extends "myapp/base_form.html" %}
+
+{% block content %}
+   <div>
+      <center>
+         <b>OUTPUT CONTROL</b><br>
+         <p>
+
+         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <div class="input-group">
+                <div class="input-group-text" id="btnGroupAddon">P0 : &nbsp;&nbsp;{{p0_status}}&nbsp;&nbsp;Change status to:</div>
+            </div>
+            <a href="{% url 'myapp:index' %}?p0_status=ON"><button type="button" class="btn btn-success">ON</button></a>
+            <a href="{% url 'myapp:index' %}?p0_status=OFF"><button type="button" class="btn btn-danger">OFF</button></a>
+        </div>
+        <br>
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+         <div class="input-group">
+             <div class="input-group-text" id="btnGroupAddon">RELAY : &nbsp;&nbsp;{{relay_status}}&nbsp;&nbsp;Change status to:</div>
+         </div>
+         <a href="{% url 'myapp:index' %}?relay_status=ON"><button type="button" class="btn btn-success">ON</button></a>
+         <a href="{% url 'myapp:index' %}?relay_status=OFF"><button type="button" class="btn btn-danger">OFF</button></a>
+         </div>
+         <br>
+         <br>
+         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <div class="input-group">
+                <div class="input-group-text" id="btnGroupAddon">LED: &nbsp;&nbsp;{{led_status}}&nbsp;&nbsp;Change color to:</div>
+            </div>
+            <a href="{% url 'myapp:index' %}?led_status=ON"><button type="button" class="btn btn-success">ON</button></a>
+            <a href="{% url 'myapp:index' %}?led_status=OFF"><button type="button" class="btn btn-danger">OFF</button></a>
+         </div>
+         <br><br>
+         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <div class="input-group">
+                <div class="input-group-text" id="btnGroupAddon">Buzzer</div>
+            </div>
+                                            
+            <a href="{% url 'myapp:index' %}?buzzer=BUZZER"><button type="button" class="btn btn-warning">Beep</button></a>
+        </div>
+        <br>
+        <br>
+         <b>SENSOR VALUE</b><br>
+         Sensors:
+         {{sensors}}<br><br>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+
+         <a href="{% url 'myapp:index' %}?p0_status={{p0_status}}&relay_status={{relay_status}}&led_status={{led_status}}"><button type="button" style="background-color: lightblue;" class="btn btn-warning">Refresh</button></a>
+        </div>
+      </center>
+   </div>
+{% endblock %}
