@@ -7,4 +7,5 @@ Building a Robust IOT device which is customizable, encrypted, secure and user f
 # Arduino Output
 ![OUTPUT](https://user-images.githubusercontent.com/45328696/147944326-dc1e5138-f94f-4bf8-af5a-88e79b3ac6a7.PNG)
 
-#[IOT PPT (1).pptx](https://github.com/bendumanoharnaidu2001/SERIAL-DATA-ACQUISITION-IN-A-IOT-SYSTEM-USING-MUX/files/7802516/IOT.PPT.1.pptx)
+#PPT
+[IOT PPT (1).pptx](https://github.com/bendumanoharnaidu2001/SERIAL-DATA-ACQUISITION-IN-A-IOT-SYSTEM-USING-MUX/files/7802516/IOT.PPT.1.pptx)
